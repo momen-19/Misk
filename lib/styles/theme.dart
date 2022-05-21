@@ -4,13 +4,13 @@ import 'package:flutter/services.dart';
 import 'color_manger.dart';
 
 ThemeData theme = ThemeData(
-  primarySwatch: Colors.purple,
+  primarySwatch: Colors.deepOrange,
   scaffoldBackgroundColor: ColorManger.scaColor,
   appBarTheme: AppBarTheme(
     centerTitle: true,
-    systemOverlayStyle: SystemUiOverlayStyle(
-      statusBarColor: ColorManger.lColor,
-      statusBarIconBrightness: Brightness.dark,
+    systemOverlayStyle:  SystemUiOverlayStyle(
+      statusBarColor: Colors.black87,
+      statusBarIconBrightness: Brightness.light,
     ),
     backgroundColor: ColorManger.scaColor,
     elevation: 0.0,

@@ -15,7 +15,7 @@ class _LunchScreenState extends State<LunchScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(const Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacementNamed(context, '/main_screen');
     });
   }
@@ -23,13 +23,13 @@ class _LunchScreenState extends State<LunchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorManger.defaultColor,
+      backgroundColor: ColorManger.scaColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SvgPicture.asset('assets/icons/logo.svg',fit: BoxFit.cover,height: 70.h,width: 70.w),
-            Text('مطبخ مسك',style: TextStyle(color: ColorManger.lColor,fontWeight: FontWeight.w700,fontSize: 22.sp),)
+            SvgPicture.asset('assets/icons/1147.svg',fit: BoxFit.cover,height: 70.h,width: 70.w),
+            Text('مطبخ مسك',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w700,fontSize: 22.sp),)
           ],
         ),
       ),

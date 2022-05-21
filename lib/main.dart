@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rent_your_car/screens/app/main_screen.dart';
+import 'package:rent_your_car/screens/details_screen.dart';
 import 'package:rent_your_car/screens/lunch_screen.dart';
+import 'package:rent_your_car/screens/test.dart';
 import 'package:rent_your_car/styles/theme.dart';
 
 void main() async {
@@ -30,6 +32,8 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => const LunchScreen(),
           '/main_screen': (context) => const MainScreen(),
+          '/details_screen': (context) => const DetailsScreen(),
+          '/test': (context) => const Test(),
         },
       ),
       designSize: const Size(375, 812),
